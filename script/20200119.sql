@@ -1,0 +1,1 @@
+alter table t_bidding_info add index indx_symbol_kind_bidding_time(symbol,kind,bidding_time);

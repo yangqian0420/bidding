@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.system.dao.BiddingInfoDao">
+
+    <select id="count" resultType="java.lang.Long">
+      select count(*) from t_bidding_info
+    </select>
+
+    <insert id="insertBiddingInfo" parameterType="com.system.dto.BiddingInfo">
+        insert into t_bidding_info(symbol, name, price,volume,amount, kind,bidding_time)
+        select #{symbol,jdbcType=VARCHAR},#{name,jdbcType=VARCHAR},#{price,jdbcType=DOUBLE},#{volume,jdbcType=DOUBLE},
+        #{amount,jdbcType=DOUBLE},#{kind,jdbcType=VARCHAR},#{bidding_time,jdbcType=TIMESTAMP}
+        from DUAL where not EXISTS
+        (select * from t_bidding_info where symbol=#{symbol,jdbcType=VARCHAR} and  kind =#{kind,jdbcType=VARCHAR}
+        AND bidding_time =#{bidding_time,jdbcType=TIMESTAMP})
+    </insert>
+
+</mapper>

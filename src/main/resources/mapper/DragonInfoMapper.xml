@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.system.dao.DragonInfoDao">
+
+    <select id="countDragon" resultType="java.lang.Long">
+        select count(*) from t_dragon_info
+    </select>
+
+    <select id="selectAllDragonCodes" resultType="com.system.dto.DragonInfo">
+        select dragon1_code,dragon1_name,dragon2_code,dragon2_name,dragon3_code,dragon3_name
+        from t_dragon_info
+    </select>
+</mapper>

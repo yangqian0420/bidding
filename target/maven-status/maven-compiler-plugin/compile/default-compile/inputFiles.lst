@@ -1,0 +1,15 @@
+D:\bidding\src\main\java\com\system\App.java
+D:\bidding\src\main\java\com\system\dao\BiddingInfoDao.java
+D:\bidding\src\main\java\com\system\util\HttpClientService.java
+D:\bidding\src\main\java\com\system\dto\DragonInfo.java
+D:\bidding\src\main\java\com\system\dto\PageInfo.java
+D:\bidding\src\main\java\com\system\dao\DragonInfoDao.java
+D:\bidding\src\main\java\com\system\util\DateUtil.java
+D:\bidding\src\main\java\com\system\util\HttpsUrlValidator.java
+D:\bidding\src\main\java\com\system\Test.java
+D:\bidding\src\main\java\com\system\util\AppConstants.java
+D:\bidding\src\main\java\com\system\util\GetCodeTypeUtils.java
+D:\bidding\src\main\java\com\system\MyQuartzTimer.java
+D:\bidding\src\main\java\com\system\util\HolidayUtils.java
+D:\bidding\src\main\java\com\system\dto\YesterDayParamsVo.java
+D:\bidding\src\main\java\com\system\dto\BiddingInfo.java
